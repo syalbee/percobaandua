@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivUnikom"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logounikom" />
+
+    <TextView
+        android:id="@+id/tvUTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="195dp"
+        android:text="Ujian Tengah Semester 2021"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivUnikom" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="195dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUTS" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="195dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="195dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btLogout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="195dp"
+        android:text="Logout"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
